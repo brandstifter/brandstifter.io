@@ -15,7 +15,7 @@ The Metric Steiner Tree
 
 A Steiner Tree is an optimization algorithm for finding a subtree spanning so called terminal vertices.
 Terminal vertices are the nodes in a network which must spanned by the MST.
-This problems arise in telecommunication networks, VSLI chip design.
+This problems arise in telecommunication networks and VSLI chip design.
 
 This article describes an 2-approximation algorithm for the Metric Steiner Tree Problem.
 
@@ -85,7 +85,6 @@ Thus, each approximation algorithm for the STP with bound $\alpha$ gives an algo
 
 ## An approximation algorithm
 
-We analyse the worst-case behaviour on the complete graph $G’$. 
 Consider a Steiner Tree with optimal cost $OPT$ for $G’$. 
 
 Find a MST on the termial vertices.
@@ -99,12 +98,14 @@ The cost of an eulerian cycle equals $2 \cdot OPT$ by edge double.
 ![](img/double-the-edges.pdf) 
 
 Construct a hamiltonian cycle by short cutting steiner vertices previously visited. 
-To get a hamiltonian path remove one edge of the cycle.
 
 ![](img/mst-st.pdf)
 
+To get a hamiltonian path remove one edge of the cycle.
 We have found an MST on the terminal vertices.
 
 
 A hamiltonian path does not increase the cost, because of the triangle inequality and removing edges. 
 The resulting MST on the terminal vertices cost $\leq 2 \cdot OPT$ and the bound is tight.
+
+Special thanks to Hans Kellerer (University of Graz) for teaching.
