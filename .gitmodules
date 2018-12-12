@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:brandstifter/brandstifter.github.io.git
+	branch = master
