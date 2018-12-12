@@ -19,39 +19,13 @@
     \Vertex[RGB,color={243,176,20},x=-5.5,y=2]{S1}
 	\Vertex[RGB,color={243,176,20},x=0,y=4]{S2}
 
-
-    \Edge[color=red,bend=25](R1)(S1)
-    \Edge[color=red,bend=25](R3)(S1)
-    \Edge[color=red,bend=25](R4)(S1)
-    \Edge[color=red,bend=25](R2)(R4)
-
-    \Edge[color=red,bend=25](R4)(S2)
-    \Edge[color=red,bend=25](S2)(R5)
-    \Edge[color=red,bend=25](S2)(R6)
-
-    \Edge[color=red,bend=25](R5)(R7)
-    \Edge[color=red,bend=25](R5)(R8)
-
-    \Edge[color=red,bend=-25](R1)(S1)
-    \Edge[color=red,bend=-25](R3)(S1)
-    \Edge[color=red,bend=-25](R4)(S1)
-    \Edge[color=red,bend=-25](R2)(R4)
-
-    \Edge[color=red,bend=-25](R4)(S2)
-    \Edge[color=red,bend=-25](S2)(R5)
-    \Edge[color=red,bend=-25](S2)(R6)
-
-    \Edge[color=red,bend=-25](R5)(R7)
-    \Edge[color=red,bend=-25](R5)(R8)
-
-
-    \Edge[color=green,bend=-50](R5)(R7)
-    \Edge[color=green,bend=-50](R7)(R8)
-    \Edge[color=green,bend=-50](R8)(R6)
-    \Edge[color=green,bend=-50](R6)(R4)
-    \Edge[color=green,bend=-50](R4)(R2)
-    \Edge[color=green,bend=-50](R2)(R1)
-    \Edge[color=green,bend=-50](R1)(R3)
-    \Edge[color=green,bend=25](R3)(R5)
+    \Edge[](R5)(R7)
+    \Edge[](R7)(R8)
+    \Edge[](R8)(R6)
+    \Edge[](R6)(R4)
+    \Edge[](R4)(R2)
+    \Edge[](R2)(R1)
+    \Edge[](R1)(R3)
+    \Edge[](R3)(R5)
 \end{tikzpicture}
 \end{document}
