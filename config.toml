@@ -50,12 +50,6 @@ theme = "brandstifter"
     identifier = "github"
     url = "https://github.com/brandstifter"
 
-  [[languages.en.menu.social]]
-    name = "Gist"
-    weight = 10
-    identifier = "gist"
-    url = "https://gist.github.com/brandstifter"
-
   [[languages.en.menu.links]]
     name = "quintessenz.at"
     weight = 10
