@@ -1,0 +1,57 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikz-network}
+
+\begin{document}
+\begin{tikzpicture}
+	\Vertex[RGB,color={61,119,171},x=-7,y=0]{R1}
+	\Vertex[RGB,color={61,119,171},x=-5.5,y=6]{R2}
+
+	\Vertex[RGB,color={61,119,171},x=-4,y=0]{R3}
+	\Vertex[RGB,color={61,119,171},x=-4,y=4]{R4}
+
+	\Vertex[RGB,color={61,119,171},x=2,y=2]{R5}
+    \Vertex[RGB,color={61,119,171},x=2,y=6]{R6}
+
+    \Vertex[RGB,color={61,119,171},x=4,y=0]{R7}
+	\Vertex[RGB,color={61,119,171},x=4,y=4]{R8}
+
+    \Vertex[RGB,color={243,176,20},x=-5.5,y=2]{S1}
+	\Vertex[RGB,color={243,176,20},x=0,y=4]{S2}
+
+
+    \Edge[color=red,bend=25](R1)(S1)
+    \Edge[color=red,bend=25](R3)(S1)
+    \Edge[color=red,bend=25](R4)(S1)
+    \Edge[color=red,bend=25](R2)(R4)
+
+    \Edge[color=red,bend=25](R4)(S2)
+    \Edge[color=red,bend=25](S2)(R5)
+    \Edge[color=red,bend=25](S2)(R6)
+
+    \Edge[color=red,bend=25](R5)(R7)
+    \Edge[color=red,bend=25](R5)(R8)
+
+    \Edge[color=red,bend=-25](R1)(S1)
+    \Edge[color=red,bend=-25](R3)(S1)
+    \Edge[color=red,bend=-25](R4)(S1)
+    \Edge[color=red,bend=-25](R2)(R4)
+
+    \Edge[color=red,bend=-25](R4)(S2)
+    \Edge[color=red,bend=-25](S2)(R5)
+    \Edge[color=red,bend=-25](S2)(R6)
+
+    \Edge[color=red,bend=-25](R5)(R7)
+    \Edge[color=red,bend=-25](R5)(R8)
+
+
+    \Edge[color=green,bend=-50](R5)(R7)
+    \Edge[color=green,bend=-50](R7)(R8)
+    \Edge[color=green,bend=-50](R8)(R6)
+    \Edge[color=green,bend=-50](R6)(R4)
+    \Edge[color=green,bend=-50](R4)(R2)
+    \Edge[color=green,bend=-50](R2)(R1)
+    \Edge[color=green,bend=-50](R1)(R3)
+    \Edge[color=green,bend=25](R3)(R5)
+\end{tikzpicture}
+\end{document}

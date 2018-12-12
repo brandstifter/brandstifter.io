@@ -1,0 +1,59 @@
+baseURL = "http://brandstifter.io/"
+languageCode = "en-us"
+
+theme = "brandstifter"
+
+[blackfriday]
+	angledQuotes = true
+
+
+[author]                     # required
+    name = "Thomas Brandstätter"
+
+[taxonomies]
+  category = "categories"
+  tags = "tags"
+
+# Links format
+[permalinks]
+  posts = "/posts/:slug/"
+  categories = "/category/:slug/"      # required
+  tags = "/tag/:slug/"                 # required
+  pages = "/:slug/"
+
+
+[params]
+
+  since = "2018"             # Site creation time
+  rssFullContent = true      # set true to use full content instead of summary
+
+  # site info (optional)
+
+  keywords = ["Thomas Brandstätter", "Computer Science", "Mathematics", "Graph theory", "Operations Research", "Algorithms", "Software Engineering"]
+  headerTitle = "Computer Science <br/> Mathematics <br/> Society"
+  description = "<br/>Being a searching mind,<br/>embody the beauty"
+  logoTitle = "Searching the truth" # shown on top-left, default: title
+  siteLogoImage = "images/phi.png"     # shown besides logoTitle
+
+  headerImage = "images/mandelbrot.jpg"
+  showAuthorCard = true # Whether to show author information below the article
+
+[languages.en]
+  languageCode = "en"
+  languageName = "English"
+  contentDir = "content"
+  weight = 1
+
+  [[languages.en.menu.social]]
+    name = "GitHub"
+    weight = 10
+    identifier = "github"
+    url = "https://github.com/brandstifter"
+
+  [[languages.en.menu.links]]
+    name = "quintessenz.at"
+    weight = 10
+    identifier = "links"
+    url = "http://quintessenz.at"
+
+
