@@ -15,7 +15,7 @@ The Metric Steiner Tree
 
 A Steiner Tree is an optimization algorithm for finding a subtree spanning so called terminal vertices.
 Terminal vertices are the nodes in a network which must spanned by the MST.
-This problems arise in telecommunication networks and VSLI chip design.
+This problems arise in railway networks, telecommunication networks and VSLI chip design.
 
 This article describes an 2-approximation algorithm for the Metric Steiner Tree Problem.
 
