@@ -92,16 +92,16 @@ Find a MST on the termial vertices.
 
 ![](img/mst.pdf) 
 
-Double each edge
+Ensure an Hamiltonian cycle in the graph by double each edge.
 
-![](imng/double-the-edges.pdf) 
+![](img/double-the-edges.pdf) 
 
 Construct a hamiltonian cycle by short cutting steiner vertices previously visited. 
 Get an hamiltonian path by removing one ??? the edges. 
 
 ![](img/mst-st.pdf)
 
-We have fo:weund an MST on the terminal vertices.
+We have found an MST on the terminal vertices.
 
 Each vertex has even degree. 
 In general eulerian cycles exists $\Longleftrightarrow$ each vertex has even degree. 

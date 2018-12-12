@@ -1,4 +1,4 @@
-baseURL = "http://brandstifter.github.io/"
+baseURL = "https://brandstifter.github.io/"
 languageCode = "en-us"
 
 theme = "brandstifter"
@@ -49,6 +49,12 @@ theme = "brandstifter"
     weight = 10
     identifier = "github"
     url = "https://github.com/brandstifter"
+
+  [[languages.en.menu.social]]
+    name = "Gist"
+    weight = 10
+    identifier = "gist"
+    url = "https://gist.github.com/brandstifter"
 
   [[languages.en.menu.links]]
     name = "quintessenz.at"
