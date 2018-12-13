@@ -24,10 +24,10 @@ This article describes an 2-approximation algorithm for the Metric Steiner Tree 
 
 The Steiner Tree Problem (STP) is a graph $G = (V, E)$.
 $V$ is splitted into two sets $R$ required terminal vertices and $S$ optional Steiner vertices.
-A subgraph of $G$ is a feasible solution if it spans all vertices of $T$.
+A subgraph of $G$ is a feasible solution if it spans all vertices of $R$.
 The objective is to minimize the cost. 
 
-The Metric Steiner Tree Problem (MSTP) is a specialization of the vanilla Steiner Tree $X = T \cup S$ along with a non-negative distance function $d : X \times X \mapsto \mathbb{R}_{\geq 0}$ for edges.
+The Metric Steiner Tree Problem (MSTP) is a specialization of the vanilla Steiner Tree $X = R \cup S$ along with a non-negative distance function $d : X \times X \mapsto \mathbb{R}_{\geq 0}$ for edges.
 A metric have two properties: 
 $$
 \begin{align}
@@ -38,7 +38,7 @@ $$
 
 This gives an undirected graph $G = (V, E)$ with non-negative edge costs. 
 
-Problem: Find a minimal cost tree $T_m$, which contains all terminal vertives, and possibly some of the optional points, such that the cost
+Problem: Find a minimal cost tree $T$, which contains all terminal vertives, and possibly some of the optional points, such that the cost
 $$
 \begin{align}
 	C_d (T_m) := \sum\_{(u,v) \in E} d(u, v) \nonumber
@@ -108,4 +108,4 @@ We have found an MST on the terminal vertices.
 A hamiltonian path does not increase the cost, because of the triangle inequality and removing edges. 
 The resulting MST on the terminal vertices cost $\leq 2 \cdot OPT$ and the bound is tight.
 
-Special thanks to Hans Kellerer (University of Graz) for teaching.
+Special thanks to Prof. Hans Kellerer (University of Graz) for teaching.

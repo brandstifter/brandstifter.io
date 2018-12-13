@@ -44,6 +44,12 @@ theme = "brandstifter"
   contentDir = "content"
   weight = 1
 
+  [[languages.en.menu.main]]
+    name = "Topics"
+    weight = 10
+    identifier = "topics"
+    url = "categories"
+
   [[languages.en.menu.social]]
     name = "GitHub"
     weight = 10
