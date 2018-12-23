@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikz-network}
+
+\begin{document}
+\begin{tikzpicture}
+		\Vertex[RGB,color={61,119,171},x=-3,y=0]{R1}
+		\Vertex[RGB,color={61,119,171},x=3,y=0]{R2}
+		\Vertex[RGB,color={61,119,171},x=0,y=5]{R3}
+		\Vertex[RGB,color={243,176,20},x=0,y=1.7]{S1}
+
+        \Edge[fontscale=2,label=10](R1)(R2)
+        \Edge[fontscale=2,label=10,RGB,color={255,38,0}](R2)(R3)
+        \Edge[fontscale=2,label=10,RGB,color={255,38,0}](R3)(R1)
+        \Edge[fontscale=2,label=3](S1)(R1)
+        \Edge[fontscale=2,label=3](S1)(R2)
+        \Edge[fontscale=2,label=3](S1)(R3)
+\end{tikzpicture}
+\end{document}
