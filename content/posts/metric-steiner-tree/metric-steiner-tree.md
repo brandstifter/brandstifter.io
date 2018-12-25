@@ -59,7 +59,7 @@ The algorithm come up with this solution:
 ![](img/k4-mst-kruskal.pdf)
 
 But this is not optimal!
-The STP would generate a better MST for that example, since ST can also consider the option Steiner vertices in the calculation.
+The STP would generate a better MST for that example, since ST can also consider the option Steiner vertices for calculation.
 Next we look for a simple and easy to implement approximation for the STP.
 
 ## Towards an approximation
@@ -121,7 +121,7 @@ We have found an MST on the terminal vertices.
 A hamiltonian path does not increase the cost, because of the triangle inequality and removing edges. 
 The resulting MST on the terminal vertices cost $\leq 2 \cdot OPT$ and the bound is tight.
 
-Looking back on $K_4$ we have to calculate the solution from $G'$ back to the original $G$ instance.  
+Looking back on $K_4$ we have to calculate the solution from $G'$ back to the original $G$ instance by reapplying the shortest path edges for $G'$ to the edges in $G$.   
 ![](img/k4-mst-2-approx.pdf)
 
 By including the optional Steiner vertice we have found a better MST compared to the Kruskal algorithm. 

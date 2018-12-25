@@ -1,0 +1,35 @@
+## Towards an approximation
+
+In general an approximation algorithm $A$ has an absolute performance guarantee $k$ if for every instance $I$ we have
+
+$$
+\begin{align}
+\forall I : | OPT(I) - A(I) | \leq k \nonumber
+\end{align}
+$$
+
+Define $G‚Äô‚ÄÖ=‚ÄÖ(V,‚ÄÖE‚Äô$) from $G$ as follows: $G‚Äô$ is a complete graph and $e‚Äô_{ij}$ is the length of the shortets path in G for vertices $i$ to $j$.
+
+$$
+\begin{align}
+    OPT(G‚Äô)‚ÄÖ\leq‚ÄÖOPT(G)
+\end{align}
+$$
+
+Assume we have a heuristic $H$ for $G‚Äô$. 
+We get a solution for $G$ by replacing each edge of the MST in $G$ with its corresponding shortest path in $G$. Resolve cycles by removing appropriate edges. Hence
+$$
+\begin{align}
+    C^H(G)‚ÄÖ\leq‚ÄÖC^H(G‚Äô)
+\end{align}
+$$
+and therefore by (1) and (2)
+$$
+\begin{align}
+    \frac{C^H(G‚Äô)}{OPT(G‚Äô)}‚ÄÖ\leq‚ÄÖ\alpha‚ÄÖ‚ÄÖ\implies‚ÄÖ‚ÄÖ\frac{C^H(G)}{OPT(G)} \leq \alpha
+\end{align}
+$$
+
+Thus, each approximation algorithm for the MSTP with bound $\alpha$ gives an algorithm with bound Œ± for the General Steiner Tree.
+
+

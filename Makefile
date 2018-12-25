@@ -6,6 +6,9 @@ AUX=$(patsubst %.tikz, %.aux, $(SOURCES))
 LOG=$(patsubst %.tikz, %.log, $(SOURCES))
 TEX=pdflatex
 
+deploy:
+	./deploy.sh
+
 tikz:
 	./render.sh
 
