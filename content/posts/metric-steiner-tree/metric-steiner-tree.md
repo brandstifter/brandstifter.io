@@ -59,7 +59,7 @@ The algorithm come up with this solution:
 ![](img/k4-mst-kruskal.pdf)
 
 But this is not optimal!
-The STP would generate a better MST for that example, since ST can also consider the option Steiner vertices for calculation.
+The STP would generate a better MST for that example, since ST can also consider the optional Steiner vertices for calculation.
 Next we look for a simple and easy to implement approximation for the STP.
 
 ## Towards an approximation
