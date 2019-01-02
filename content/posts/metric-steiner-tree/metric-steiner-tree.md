@@ -20,7 +20,7 @@ This problems arise in railway networks, telecommunication networks and VSLI chi
 
 This article describes an 2-approximation algorithm for the Metric Steiner Tree Problem.
 Note that 2-approximation guarantees a solution $2 \cdot OPT$ on worst case situations.
-If you look for the best approximation, the best known algorithm is a $ 96/95 $-approximation.
+If you look for the best approximation, the best known algorithm is a 96/95-approximation.
 
 ## Introduction
 

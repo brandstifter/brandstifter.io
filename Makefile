@@ -10,9 +10,12 @@ deploy:
 	./deploy.sh
 
 tikz:
-	./render.sh
+	./bin/render-tikz.sh
 
-serve: tikz
+tex:
+	./bin/render-tex.sh
+
+serve:
 	hugo serve
 
 watch:

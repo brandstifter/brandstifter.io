@@ -32,7 +32,7 @@ theme = "brandstifter"
   keywords = ["Thomas Brandstätter", "Computer Science", "Mathematics", "Graph theory", "Operations Research", "Algorithms", "Software Engineering"]
   headerTitle = "Computer Science <br/> Mathematics <br/> Society"
   description = "<br/>Being a searching mind,<br/>embody the beauty"
-  logoTitle = "Searching the truth" # shown on top-left, default: title
+  logoTitle = "Discover the power of mind" # shown on top-left, default: title
   siteLogoImage = "images/phi.png"     # shown besides logoTitle
 
   headerImage = "images/mandelbrot.jpg"
@@ -59,7 +59,7 @@ theme = "brandstifter"
   [[languages.en.menu.links]]
     name = "quintessenz.at"
     weight = 10
-    identifier = "links"
+    identifier = "quintessenz"
     url = "http://quintessenz.at"
 
 

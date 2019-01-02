@@ -2,8 +2,8 @@
 title: "The beauty of Voronio"
 date: 2018-12-20
 slug: "the-beauty-of-voronoi"
-tags: ["voronoi", "euler formula"]
-categories: ["graph theory"]
+tags: ["voronoi", "euclidean space"]
+categories: ["graph theory", "geometry"]
 header_image: "posts/the-beauty-of-voronoi/img/leave.jpg"
 ---
 
@@ -16,7 +16,7 @@ Voronoi diagrams are found in nature on the skin of giraffes, veins of leaves un
 In biology, Voronois are used to model biological structures, in ecology, they are used to study growth patterns of forrests and in case of incoming emergency calls, Voronoi diagrams can alert the nearest fire station, also known as nearest neighbour queries.
 There are many applications in natural sciences, health, engineering, geometry and computer science.
 
-This article wants to illuminate two properties forming an Voronoi cell, namely how an edge and a vertex of a Voronoi are described.
+This article wants to illuminate two properties forming a Voronoi cell, namely how an edge and a vertex of a Voronoi are described.
 
 ## Introduction
 
@@ -85,8 +85,8 @@ In a more formal way we state that the bisector between sites $p_i$ and $p_j$ de
 
 Lets proof this.
 
-Suppose there is a pont $q$ with the property.
-Since $C_P(q)$ does not contain ay sites in its interior and $p_i, p_j$ are on its boundary, we have $d(q, p_i) = d(q, p_j) \leq d(q, p_k)$ for all $1 \leq k \leq n$.
+Suppose there is a point $q$ with the property.
+Since $C_P(q)$ does not contain any sites in its interior and $p_i, p_j$ are on its boundary, we have $d(q, p_i) = d(q, p_j) \leq d(q, p_k)$ for all $1 \leq k \leq n$.
 It follows that $q$ lies on an edge or vertex of $Vor(P)$.
 $q$ cannot be a vertex of $Vor(P)$, hence $q$ lies on an edge of $Vor(P)$, which is defined by the bisector of $p_i, p_j$.
 Conversevly, let the bisector of $p_i, p_j$ define a Voronoi edge.
@@ -94,9 +94,8 @@ The largest empty circle of any point $q$ in the interior of this edge must cont
 
 ## Summary
 
-Now we can move a circle in mind within an Voronoi diagram in order to recreate the vertices and edges by moving a it along the bisectors of a point set.
+Now we can move a circle in mind within an Voronoi diagram in order to recreate the vertices and edges by moving these circle along the bisectors of a point set.
 This is beautiful and I amazed to recognize this pattern in nature.
 ![](img/dragonfly-wing.jpg)
 
-Special thanks to Martin Nöllenburg (University of Technology Vienna) for teaching this.
 
